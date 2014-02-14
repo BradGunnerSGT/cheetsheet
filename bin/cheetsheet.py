@@ -21,9 +21,11 @@ along with Cheetsheet.  If not, see <http://www.gnu.org/licenses/>.
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
 from reportlab.lib.enums import TA_JUSTIFY
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.platypus import TableStyle
 from reportlab.lib.units import inch
+from reportlab.lib import colors
 import os
 import sys
 
@@ -54,8 +56,9 @@ def buildPDF(data, filename):
 	Story.append(Paragraph(header, styles['Normal']))
 	Story.append(Spacer(1,12))
 
+	tdata = []
 	for section in data.get('sections'):
-		notestr = ''
+		notestr = '- %s measure%s<br/>' % (	section.get('measures', "0"), 's' if section.get('measures', None) else '')
 		if section.get('notes'):
 			for note in section.get('notes'):
 				notestr += "- %s<br/>" % note
@@ -68,21 +71,31 @@ def buildPDF(data, filename):
 			#lyrstr += "</para>"
 
 		para = """
-		<b>%s</b><br/>
-		<i>- %s measure%s<br/>
-		%s</i>
+		<b>%s</b> <br/>
 		%s
 		""" % (
 			section.get('title'), 
-			section.get('measures', "0"),
-			's' if section.get('measures', None) else '',
-			notestr,
+			#notestr,
 			lyrstr
 		)
-		Story.append(Paragraph(para, styles['Normal']))
+		tdata.append([
+			Paragraph(para, styles['BodyText']), 
+			Paragraph(notestr, styles['BodyText'])
+			])
+		#Story.append(Paragraph(para + lyrstr, styles['Normal']))
 		#Story.append(Paragraph(lyrstr, styles['Normal']))
-		Story.append(Spacer(1,12))
+		#Story.append(Spacer(1,12))
 
+	Story.append(
+		Table(
+			tdata, 
+			style = TableStyle([ 
+							('VALIGN', (0,0) , (-1, -1) , 'TOP' ) ,
+							('INNERGRID',   (0,0) , (-1, -1),  0.25 , colors.black ),
+							('BOX',   (0,0) , (-1, -1),  0.5 , colors.black ),
+							])
+			)
+	)
 	# create the PDF and write it out
 	doc.build(Story)
 
