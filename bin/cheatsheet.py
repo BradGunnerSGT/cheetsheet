@@ -26,6 +26,8 @@ def main(args):
 
 
 if __name__ == "__main__":
+	"""preamble, handle option parsing, housekeeping, and start the main loop"""
+
 	import argparse
 	parser = argparse.ArgumentParser(description="Process a Cheetsheet file into a PDF")
 	parser.add_argument('input', nargs='+', help='Cheetsheet-formatted filename(s) to process.')
