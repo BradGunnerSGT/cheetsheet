@@ -31,4 +31,6 @@ along with Cheetsheet.  If not, see <http://www.gnu.org/licenses/>.
 Requirements
 ====
 
-Cheetsheet requires Python 2.7+ and the ReportLab module for PDF generation.
+Cheetsheet requires Python 2.7+ and the following python modules:
+- ReportLab: module for PDF generation.
+- Markdown: for formatting text to HTML or other markup
