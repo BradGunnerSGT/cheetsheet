@@ -28,6 +28,7 @@ from reportlab.lib.units import inch
 from reportlab.lib import colors
 import os
 import sys
+import re
 
 
 def buildPDF(data, filename):
@@ -67,8 +68,12 @@ def buildPDF(data, filename):
 		if section.get('lyrics'):
 			#lyrstr += '<para leftIndent="20">'
 			for lyric in section.get('lyrics'):
+				lyric = lyric.replace("\n", "<br/>")
+				lyric = lyric.replace('[', "<strong>")
+				lyric = lyric.replace(']', "</strong>")
+				lyric = lyric.replace('(', "<em>")
+				lyric = lyric.replace(')', "</em>")
 				lyrstr += "%s<br/>" % lyric 
-			#lyrstr += "</para>"
 
 		para = """
 		<b>%s</b> <br/>
