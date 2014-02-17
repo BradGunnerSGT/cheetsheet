@@ -26,6 +26,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import TableStyle
 from reportlab.lib.units import inch
 from reportlab.lib import colors
+from markdown import markdown
 import os
 import sys
 import re
@@ -59,37 +60,34 @@ def buildPDF(data, filename):
 
 	tdata = []
 	for section in data.get('sections'):
-		notestr = '- %s measure%s<br/>' % (	section.get('measures', "0"), 's' if section.get('measures', None) else '')
+		leftPanel = []
+		
+		sectiontitle = '<strong>%s</strong>' % section.get('title', "NO TITLE GIVEN")
+		leftPanel.append(Paragraph(sectiontitle, styles['Normal']))
+
+		lyrics = ""
+		if section.get('lyrics'):
+			lyrics += '<br/>'.join(section.get('lyrics'))
+		lyrics = markdown(lyrics) 
+		lyrics = "<para leftIndent='5'>%s</para>" % lyrics
+		leftPanel.append(Paragraph(lyrics, styles['Normal']))
+
+
+		rightPanel = []
+		bullet = '<bullet>&bull;</bullet>'
+		
+		measures = int(section.get('measures', '0'))
+		plural = '' if measures == 1 else 's'
+		rightPanel.append(Paragraph('%s %s measure%s' % (bullet, measures, plural), styles['Normal']))
+		
 		if section.get('notes'):
 			for note in section.get('notes'):
-				notestr += "- %s<br/>" % note
+				rightPanel.append(Paragraph("%s %s" % (bullet, markdown(note)), styles['Normal']))
 
-		lyrstr = ''
-		if section.get('lyrics'):
-			#lyrstr += '<para leftIndent="20">'
-			for lyric in section.get('lyrics'):
-				lyric = lyric.replace("\n", "<br/>")
-				lyric = lyric.replace('[', "<strong>")
-				lyric = lyric.replace(']', "</strong>")
-				lyric = lyric.replace('(', "<em>")
-				lyric = lyric.replace(')', "</em>")
-				lyrstr += "%s<br/>" % lyric 
-
-		para = """
-		<b>%s</b> <br/>
-		%s
-		""" % (
-			section.get('title'), 
-			#notestr,
-			lyrstr
-		)
 		tdata.append([
-			Paragraph(para, styles['BodyText']), 
-			Paragraph(notestr, styles['BodyText'])
-			])
-		#Story.append(Paragraph(para + lyrstr, styles['Normal']))
-		#Story.append(Paragraph(lyrstr, styles['Normal']))
-		#Story.append(Spacer(1,12))
+			leftPanel,
+			rightPanel
+		])
 
 	Story.append(
 		Table(
