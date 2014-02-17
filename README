@@ -1,10 +1,14 @@
 Cheetsheet
 ====
 
-Cheetsheet is a method of taking text files in the Cheetsheet notation and outputting PDF files for use by musicians.
+Cheetsheet is a method of taking text files in the Cheetsheet notation and
+outputting PDF files for use by musicians.
 
-A Cheatsheet usually has only the information needed for the appropriate musician. For example, a rhythm guitarist may only need the "chord sheet" the chord names listed above the lyrics, while a drummer may need only information about the structure of the song, with
-cues for sections, notes about the feel of a section, drum tab for interesting fills leading to the next section, etc.
+A Cheatsheet usually has only the information needed for the appropriate
+musician. For example, a rhythm guitarist may only need the "chord sheet" (the
+chord names listed above the lyrics), while a drummer may need only information
+about the structure of the song, with cues for sections, notes about the feel
+of a section, drum tab for interesting fills leading to the next section, etc.
 
 
 License
@@ -27,4 +31,4 @@ along with Cheetsheet.  If not, see <http://www.gnu.org/licenses/>.
 Requirements
 ====
 
-Cheetsheet requires Python 2.7+
+Cheetsheet requires Python 2.7+ and the ReportLab module for PDF generation.
