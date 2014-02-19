@@ -30,6 +30,8 @@ from markdown import markdown
 import os
 import sys
 import re
+from pprint import pprint
+
 
 
 def buildPDF(data, filename):
@@ -82,7 +84,16 @@ def buildPDF(data, filename):
 		
 		if section.get('notes'):
 			for note in section.get('notes'):
-				rightPanel.append(Paragraph("%s %s" % (bullet, markdown(note)), styles['Normal']))
+				note = markdown(note)
+				note = note.replace('<p>', '')
+				note = note.replace('</p>', '')
+				#print note
+				if note.find('|') > -1:
+					left, p, remaining = note.partition('|')
+					center, p, right = remaining.rpartition('|')
+					note = "%s<font face=\"Courier\">|%s|</font>%s" % (left, center, right)
+					#print note
+				rightPanel.append(Paragraph("%s %s" % (bullet, note), styles['Normal']))
 
 		tdata.append([
 			leftPanel,
