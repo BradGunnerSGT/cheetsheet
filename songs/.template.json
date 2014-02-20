@@ -1,0 +1,76 @@
+{
+	"title" : "",
+	"artist" : "",
+	"tempo" : "80",
+	"time signature" : "4/4",
+
+	"sections" : [
+		{
+			"title": "Intro",
+			"measures" : 16
+		},
+		{
+			"title": "Verse 1",
+			"measures" : 4,
+			"notes" : [
+				""
+			],
+			"lyrics" : [
+			]
+		},
+		{
+			"title": "Chorus",
+			"measures" : 4,
+			"notes" : [
+				""
+			],
+			"lyrics" : [
+			]
+
+		},
+		{
+			"title": "Vamp",
+			"measures" : 4,
+			"notes" : [
+				""
+			],
+			"lyrics" : [
+			]
+
+		},
+		{
+			"title": "Verse",
+			"measures" : 4,
+			"notes" : [
+			],
+			"lyrics" : [
+			]
+
+		},
+		{
+			"title": "Chorus",
+			"measures" : 4,
+			"notes" : [
+				"Repeat first chorus"
+			]
+		},
+		{
+			"title": "Verse",
+			"measures" : 4,
+			"notes" : [
+			],
+			"lyrics" : [
+			]
+
+		},
+		{
+			"title": "Chorus",
+			"measures" : 4,
+			"notes" : [
+				"Repeat first chorus"
+			]
+
+		}
+
+	]
+}
