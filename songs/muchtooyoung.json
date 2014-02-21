@@ -1,0 +1,87 @@
+{
+	"title" : "Much Too Young (to feel this damn old)",
+	"artist" : "Garth Brooks",
+	"tempo" : "160",
+	"time signature" : "4/4",
+
+	"sections" : [
+		{
+			"title": "Intro",
+			"measures" : 16,
+			"notes" : [
+				"no drums",
+				"intro verse starts meas 8"
+			],
+			"lyrics" : [
+				"This ol' highway's getting longer ",
+				"Seems there ain't no end in sight ",
+				"To sleep would be best, but I just can't afford to rest ",
+				"I've got to ride in Denver tomorrow night "
+			]
+		},
+		{
+			"title": "Verse",
+			"measures" : 8,
+			"notes" : [
+				"drums: | k- s- k- s- |",
+				"cross stick snare"
+			],
+			"lyrics" : [
+				"I called the house but no one answered ",
+				"For the last two weeks no one's been home ",
+				"I guess she's through with me, to tell the truth I just can't see ",
+				"What's kept the woman holding on this long "
+			]
+		},
+		{
+			"title": "Chorus",
+			"measures" : 8,
+			"notes" : [
+				"regular KSKS money beat w/ ride"
+			],
+			"lyrics" : [
+				"And the white line's getting longer and the saddle's getting cold ",
+				"I'm much too young to feel this damn old ",
+				"All my cards are on the table with no ace left in the hole ",
+				"I'm much too young to feel this damn old "
+			]
+
+		},
+		{
+			"title": "Solo",
+			"measures" : 8,
+			"notes" : [
+				"4 meas steel guitar + 4 meas fiddle"
+			],
+			"lyrics" : [
+			]
+		},
+		{
+			"title": "Verse",
+			"measures" : 8,
+			"notes" : [
+				"cross stick snare and hi-hat"
+			],
+			"lyrics" : [
+				"The competition's getting younger ",
+				"Tougher broncs, you know I can't recall ",
+				"A worn out tape of Chris LeDoux, lonely women and bad booze ",
+				"Seem to be the only friends I've left at all "
+			]
+		},
+		{
+			"title": "Chorus",
+			"measures" : 10,
+			"notes" : [
+				"switch to snare and ride"
+			],
+			"lyrics" : [
+				"And the white line's getting longer and the saddle's getting cold ",
+				"I'm much too young to feel this damn old ",
+				"All my cards are on the table with no ace left in the hole ",
+				"I'm much too young to feel this damn old ",
+				"Lord, I'm much too young to feel this damn old"
+			]
+		}
+	]
+}

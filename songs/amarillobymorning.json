@@ -1,0 +1,88 @@
+{
+	"title" : "Amarillo by Morning",
+	"artist" : "George Strait",
+	"tempo" : "117",
+	"time signature" : "4/4",
+
+	"sections" : [
+		{
+			"title": "Intro",
+			"measures" : 9,
+			"notes": [
+				"drums: x stick | k- xk k- x- |",
+				"drums: last meas | k- -- -- xx |"
+			]
+		},
+		{
+			"title": "Verse",
+			"measures" : 20,
+			"notes" : [
+				"drums: cross stick | k s k s |",
+				"vamp: last 4 meas"
+			],
+			"lyrics" : [
+				"Amarillo by morning",
+				"Up from San Antone",
+				"Everything that I got",
+				"Is just what I've got on",
+				"When that sun is high in that Texas sky",
+				"I'll be bucking at the county fair",
+				"Amarillo by morning",
+				"Amarillo, I'll be there"
+			]
+		},
+		{
+			"title": "Verse",
+			"measures" : 20,
+			"notes" : [
+				"vamp: last 4 meas",
+				"drums: desc tom run last meas",
+				"|k-tt tt Tt Ff |"
+			],
+			"lyrics" : [
+				"They took my saddle in Houston",
+				"Broke my leg in Santa Fe",
+				"I lost my wife and a girlfriend",
+				"Somewhere along the way",
+				"But I'll be looking for 8 when they pull that gate",
+				"And I hope that judge ain't blind",
+				"Amarillo by morning",
+				"Amarillo's on my mind"
+			]
+
+		},
+		{
+			"title": "Verse",
+			"measures" : 20,
+			"notes" : [
+				"drums: rock beat | k- s- kk s- |",
+				"drums: band hit after first 'where I'll be':",
+				"| k-tt f-f- c- c- |"
+			],
+			"lyrics" : [
+				"Amarillo by morning",
+				"Up from San Antone",
+				"Everything that I got",
+				"Is just what I've got on",
+				"I ain't got a dime but what I got is mine",
+				"I ain't rich but Lord I'm free",
+				"Amarillo by morning",
+				"Amarillo's where I'll be",
+				"Amarillo by morning",
+				"Amarillo's where I'll be"
+			]
+
+		},
+		{
+			"title": "Outro",
+			"measures" : 20,
+			"notes" : [
+				"drums: X stick | k- sk k- s- |",
+				"**drums out after 4 meas**"
+			],
+			"lyrics" : [
+			]
+
+		}
+	]
+}
