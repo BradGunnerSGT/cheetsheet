@@ -61,14 +61,17 @@ def buildPDF(data, filename):
 	Story.append(Spacer(1,12))
 
 	tdata = []
+	seen = dict() 
 	for section in data.get('sections'):
 		leftPanel = []
 		rightPanel = []
 		bullet = '<bullet>&bull;</bullet>'
 		
+		title = section.get('title', 'N/A')
+		seen[title] = seen.get(title, 0) + 1
 		measures = int(section.get('measures', '0'))
 		plural = '' if measures == 1 else 's'
-		sectiontitle = '<strong>%s</strong> - <em>%s measure%s</em>' % (section.get('title', "NO TITLE GIVEN"), measures, plural)
+		sectiontitle = '<strong>%s %s</strong> - <em>%s measure%s</em>' % (title, seen[title], measures, plural)
 		leftPanel.append(Paragraph(sectiontitle, styles['Normal']))
 
 		lyrics = ""
