@@ -1,0 +1,124 @@
+{
+	"title" : "My Kinda Party",
+	"artist" : "Jason Aldean",
+	"tempo" : "89",
+	"time signature" : "4/4",
+
+	"sections" : [
+		{
+			"title": "Intro",
+			"measures" : 9,
+			"notes" : [
+				"cymbal swell pickups to meas 1",
+				"| - | - | - | - - - T |",
+				"| C- -- -K F- | C- -- -S StF- | ",
+				"| C- -S -tt S-FF | C- 0- 0- T- |"
+			]
+		},
+		{
+			"title": "Verse 1",
+			"measures" : 12,
+			"notes" : [
+				"| Kxxx xx0x xxxx Xxxx | Kxxx Xxxx xxxx Xxxx |",
+				"| Kxxx Xxxx xXxx Xxxx | Kxxx X-O- xxxx X-O- |",
+				"| Kxxx S-x0 xxO- xxO- | Kxxx S-x0 xxO- xxO- |",
+				"| Kxxx S-x0 xxO- xxO- | Kxxx S-x0 xx0- T--- |",
+				"| C- r- r- S- | C- r- r--k S- |",
+				"| C- r- rs S- | TT TT stfk s-ss |"
+			],
+			"lyrics" : [
+				"Worked all week, cleaned up, clean cut, and clean shaved",
+				"I got the cover off the '68",
+				"I fired it up, and let them horses sing",
+				"A little pretty thing, a little tan legged Georgia dream",
+				"She's rockin' them holey jeans",
+				"Baby, what you got goin' on Saturday? You know",
+				"Words got it, there's gonna be a party",
+				"Out of town about half a mile",
+				"Four wheel drives and big mud tires",
+				"Muscadine wine"
+			]
+		},
+		{
+			"title": "Chorus",
+			"measures" : 12,
+			"notes" : [
+				"groove on ride/kick/snare rest of verse:",
+				"| k--k s--- -s-k s- |",
+				"4 meas vamp at end of chorus"
+			],
+			"lyrics" : [
+				"Oh baby, you can find me",
+				"In the back of a jacked up tailgate",
+				"Sittin' 'round watchin' all these pretty things",
+				"Get down in that Georgia clay",
+				"And I'll find peace",
+				"In the bottom of a real tall cold drink",
+				"Chillin' with some Skynyrd and some old Hank",
+				"Lets get this thing started",
+				"It's my kind of party"
+			]
+
+		},
+		{
+			"title": "Verse",
+			"measures" : 12,
+			"notes" : [
+				"basic groove, hh 8ths: ",
+				"| k--- s--- -sO- s--- |",
+				"last 2 measures groove | k- s- kk s- |"
+			],
+			"lyrics" : [
+				"Well if you wanna drink",
+				"Go on baby, just do your thing",
+				"But give up your keys",
+				"Hell why drive when you can stay with me?",
+				"And then after while we'll sneak away from the bonfire",
+				"Walk by the moonlight and down to the riverside",
+				"Gotcha sippin' on the moonshine",
+				"Baby, if you're in mood and you can settle for a one night rodeo",
+				"If you can be my tan-legged Juliet",
+				"I'll be your Redneck Romeo"
+			]
+
+		},
+		{
+			"title": "Chorus",
+			"measures" : 12,
+			"notes" : [
+				"8 meas chorus + 4 meas vamp/solo"
+			],
+			"lyrics" : [
+				"Repeat first chorus"
+			]
+		},
+		{
+			"title": "Chorus",
+			"measures" : 10,
+			"notes" : [
+				"band hits on 'find me' and 'back of a jacked up..'",
+				"drums stop on 'pretty things' build into 'get down on..'",
+				"full stop on last 'my kinda party'",
+				"meas 9 & 10 silence then hi-hat pickups to outro"
+			],
+			"lyrics" : [
+				"Repeat first chorus"
+			]
+
+		},
+		{
+			"title": "Outro",
+			"measures" : 24,
+			"notes" : [
+				"4 meas vamp (kick on ones, hh pattern)",
+				"4 meas vamp w/ tom pattern",
+				"trading 4's guitar solos"
+			],
+			"lyrics" : [
+				"Haha, y'all ready for this?",
+				"Y'all go head and turn it on up"
+			]
+		}
+
+	]
+}
