@@ -88,7 +88,7 @@ def buildPDF(data, filename):
 					left, p, remaining = note.partition('|')
 					center, p, right = remaining.rpartition('|')
 					note = "%s<font face=\"Courier\" size=8>|%s|</font>%s" % (left, center, right)
-					print note
+					#print note
 				leftPanel.append(Paragraph("%s %s" % (bullet, note), styles['Normal']))
 
 		tdata.append([
