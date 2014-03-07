@@ -63,6 +63,8 @@ def buildPDF(data, filename):
 	tdata = []
 	for section in data.get('sections'):
 		leftPanel = []
+		rightPanel = []
+		bullet = '<bullet>&bull;</bullet>'
 		
 		sectiontitle = '<strong>%s</strong>' % section.get('title', "NO TITLE GIVEN")
 		leftPanel.append(Paragraph(sectiontitle, styles['Normal']))
@@ -72,15 +74,12 @@ def buildPDF(data, filename):
 			lyrics += '<br/>'.join(section.get('lyrics'))
 		lyrics = markdown(lyrics) 
 		lyrics = "<para leftIndent='5'>%s</para>" % lyrics
-		leftPanel.append(Paragraph(lyrics, styles['Normal']))
+		rightPanel.append(Paragraph(lyrics, styles['Normal']))
 
-
-		rightPanel = []
-		bullet = '<bullet>&bull;</bullet>'
 		
 		measures = int(section.get('measures', '0'))
 		plural = '' if measures == 1 else 's'
-		rightPanel.append(Paragraph('%s %s measure%s' % (bullet, measures, plural), styles['Normal']))
+		leftPanel.append(Paragraph('%s %s measure%s' % (bullet, measures, plural), styles['Normal']))
 		
 		if section.get('notes'):
 			for note in section.get('notes'):
@@ -93,7 +92,7 @@ def buildPDF(data, filename):
 					center, p, right = remaining.rpartition('|')
 					note = "%s<font face=\"Courier\">|%s|</font>%s" % (left, center, right)
 					#print note
-				rightPanel.append(Paragraph("%s %s" % (bullet, note), styles['Normal']))
+				leftPanel.append(Paragraph("%s %s" % (bullet, note), styles['Normal']))
 
 		tdata.append([
 			leftPanel,
