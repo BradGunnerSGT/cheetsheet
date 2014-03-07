@@ -66,7 +66,9 @@ def buildPDF(data, filename):
 		rightPanel = []
 		bullet = '<bullet>&bull;</bullet>'
 		
-		sectiontitle = '<strong>%s</strong>' % section.get('title', "NO TITLE GIVEN")
+		measures = int(section.get('measures', '0'))
+		plural = '' if measures == 1 else 's'
+		sectiontitle = '<strong>%s</strong> - <em>%s measure%s</em>' % (section.get('title', "NO TITLE GIVEN"), measures, plural)
 		leftPanel.append(Paragraph(sectiontitle, styles['Normal']))
 
 		lyrics = ""
@@ -75,11 +77,6 @@ def buildPDF(data, filename):
 		lyrics = markdown(lyrics) 
 		lyrics = "<para leftIndent='5'>%s</para>" % lyrics
 		rightPanel.append(Paragraph(lyrics, styles['Normal']))
-
-		
-		measures = int(section.get('measures', '0'))
-		plural = '' if measures == 1 else 's'
-		leftPanel.append(Paragraph('%s %s measure%s' % (bullet, measures, plural), styles['Normal']))
 		
 		if section.get('notes'):
 			for note in section.get('notes'):
