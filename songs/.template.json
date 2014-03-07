@@ -8,6 +8,8 @@
 		{
 			"title": "Intro",
 			"measures" : 16
+			"notes" : [
+			]
 		},
 		{
 			"title": "Verse 1",
@@ -55,7 +57,16 @@
 			]
 		},
 		{
-			"title": "Verse",
+			"title": "Solo",
+			"measures" : 4,
+			"notes" : [
+			],
+			"lyrics" : [
+			]
+
+		},
+		{
+			"title": "Bridge",
 			"measures" : 4,
 			"notes" : [
 			],
@@ -70,7 +81,16 @@
 				"Repeat first chorus"
 			]
 
-		}
+		},
+		{
+			"title": "Outro",
+			"measures" : 4,
+			"notes" : [
+				""
+			],
+			"lyrics" : [
+			]
 
+		}
 	]
 }
