@@ -7,10 +7,16 @@
 	"sections" : [
 		{
 			"title": "Intro",
-			"measures" : 16,
+			"measures" : 8,
 			"notes" : [
-				"no drums",
-				"intro verse starts meas 8"
+				"no drums"
+			]
+		},
+		{
+			"title": "Intro Verse",
+			"measures" : 8,
+			"notes": [
+				"no drums"
 			],
 			"lyrics" : [
 				"This ol' highway's getting longer ",
@@ -23,8 +29,7 @@
 			"title": "Verse",
 			"measures" : 8,
 			"notes" : [
-				"drums: | k- s- k- s- |",
-				"cross stick snare"
+				"drums: x stick | k- x- k- x- |"
 			],
 			"lyrics" : [
 				"I called the house but no one answered ",
@@ -60,7 +65,7 @@
 			"title": "Verse",
 			"measures" : 8,
 			"notes" : [
-				"cross stick snare and hi-hat"
+				"drums: x stick | k- x- k- x- |"
 			],
 			"lyrics" : [
 				"The competition's getting younger ",
