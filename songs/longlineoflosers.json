@@ -1,0 +1,120 @@
+{
+	"title" : "Long Line of Losers",
+	"artist" : "Kevin Fowler",
+	"tempo" : "78",
+	"time signature" : "4/4",
+
+	"sections" : [
+		{
+			"title": "Intro",
+			"measures" : 4,
+			"notes" : [
+				"free form fiddle solo prior to meas 1",
+				"2 meas fiddle only",
+				"2 meas add guit and HH on 2&4"
+			]
+		},
+		{
+			"title": "Verse",
+			"measures" : 8,
+			"notes" : [
+				"HH on 2&4",
+				"pickups into chorus:",
+				"| ---- ---- --ff f-f- | C / / / | "
+			],
+			"lyrics" : [
+				"Granddaddy was Irish Cherokee",
+				"Ran moonshine from here to Tennessee",
+				"Spent half his life in the Montgomery county jail",
+				"Grandma she got drunk and left",
+				"All her kids on her mama's front steps",
+				"Nobody's heard from here since she hightailed"
+			]
+		},
+		{
+			"title": "Chorus",
+			"measures" : 7,
+			"notes" : [
+				"basic rock groove (hh 8ths):",
+				"| k- s- kk s- |"
+			],
+			"lyrics" : [
+				"I come from long line of losers",
+				"Half outlaw half boozer",
+				"I was born with a shot glass in my hand",
+				"I’m part hippie a little red neck",
+				"I’m always a suspect",
+				"My blood line made me who I am"
+			]
+
+		},
+		{
+			"title": "Vamp",
+			"measures" : 2,
+			"notes" : [
+				"no drums, HH on 2&4, snare roll pickups into verse"
+			],
+			"lyrics" : [
+			]
+
+		},
+		{
+			"title": "Verse",
+			"measures" : 4,
+			"notes" : [
+			],
+			"lyrics" : [
+				"Daddy never finished school but",
+				"He shot one mean game of pool",
+				"Took a bullet for stealin’ cars down in Birmingham",
+				"Mama always went to church",
+				"We soon found out what her reasons were",
+				"She got caught at the local motel with preacher man"
+			]
+
+		},
+		{
+			"title": "Chorus",
+			"measures" : 4,
+			"notes" : [
+				"Repeat first chorus"
+			]
+		},
+		{
+			"title": "Solo",
+			"measures" : 4,
+			"notes" : [
+			],
+			"lyrics" : [
+			]
+
+		},
+		{
+			"title": "Bridge",
+			"measures" : 4,
+			"notes" : [
+			],
+			"lyrics" : [
+			]
+
+		},
+		{
+			"title": "Chorus",
+			"measures" : 4,
+			"notes" : [
+				"Repeat first chorus"
+			]
+
+		},
+		{
+			"title": "Outro",
+			"measures" : 4,
+			"notes" : [
+				""
+			],
+			"lyrics" : [
+			]
+
+		}
+	]
+}
