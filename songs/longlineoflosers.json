@@ -60,7 +60,7 @@
 		},
 		{
 			"title": "Verse",
-			"measures" : 4,
+			"measures" : 8,
 			"notes" : [
 			],
 			"lyrics" : [
@@ -75,23 +75,14 @@
 		},
 		{
 			"title": "Chorus",
-			"measures" : 4,
+			"measures" : 8,
 			"notes" : [
 				"Repeat first chorus"
 			]
 		},
 		{
 			"title": "Solo",
-			"measures" : 4,
-			"notes" : [
-			],
-			"lyrics" : [
-			]
-
-		},
-		{
-			"title": "Bridge",
-			"measures" : 4,
+			"measures" : 8,
 			"notes" : [
 			],
 			"lyrics" : [
@@ -100,17 +91,28 @@
 		},
 		{
 			"title": "Chorus",
-			"measures" : 4,
+			"measures" : 8,
 			"notes" : [
-				"Repeat first chorus"
+				"ritard last 'Losers' lyric for 1 meas, drum fill into outro"
+			],
+			"lyrics" : [
+				"I come from long line of losers",
+				"Half outlaw half boozer",
+				"I was born with a shot glass in my hand",
+				"I’m part hippie a little red neck",
+				"I’m always a suspect",
+				"My blood line made me who I am",
+				"I come from long line of losers"
 			]
+
 
 		},
 		{
 			"title": "Outro",
-			"measures" : 4,
+			"measures" : 16,
 			"notes" : [
-				""
+				"guitar/fiddle/steel solos on outro",
+				"optional repeat final chorus and hold out last line"
 			],
 			"lyrics" : [
 			]
