@@ -1,0 +1,133 @@
+{
+	"title" : "Kiss Me in the Dark",
+	"artist" : "Randy Rogers",
+	"tempo" : "108",
+	"time signature" : "4/4",
+
+	"sections" : [
+		{
+			"title": "Intro",
+			"measures" : 8,
+			"notes" : [
+				"2 beat pickups to meas 1",
+				"| - - -t sst- | c / / / |",
+				"intro groove:",
+				"| k- s- kk s- | k- s- kk s- |",
+				"last meas band stop on 1, pickups to verse on & of 3",
+				"soft fill into verse, no crash"
+			]
+		},
+		{
+			"title": "Verse 1",
+			"measures" : 11,
+			"notes" : [
+				"verse groove:",
+				"| k- s- k- s- | % | % | k- s- kk s- |"
+			],
+			"lyrics" : [
+				"Sailors sail",
+				"Cowboys ride",
+				"Lovers love when they get the chance",
+				"Take it slow",
+				"Turn down the light",
+				"Soft and low",
+				"Let the shadows dance ",
+				"Baby don't hold back"
+			]
+		},
+		{
+			"title": "Chorus",
+			"measures" : 9,
+			"notes" : [
+				"the lyric 'kiss me in the dark' starts in the measure prior to the chorus, with the word 'dark' hitting on the downbeat",
+				"chorus groove:",
+				"| k- s- kk s- | k- s- kk s- |",
+				"9 meas chorus + 4 meas vamp"
+			],
+			"lyrics" : [
+				"Kiss me in the dark",
+				"Roll me through the night",
+				"Hold me like you'll never let me go ",
+				"Hit me with your heart",
+				"Til the morning light",
+				"Let your skin talk to my soul",
+				"Kiss me in the dark"
+			]
+
+		},
+		{
+			"title" : "Vamp",
+			"measures" : 4,
+			"notes" : [
+				"last meas band stop on 1, pickups to verse on & of 3",
+				"soft fill into verse, no crash"
+				]
+		},
+		{
+			"title": "Verse",
+			"measures" : 12,
+			"notes" : [
+			],
+			"lyrics" : [
+				"Lets strip away everything ",
+				"Tonight theres nothing getting in our way",
+				"The ties that bind, the wheres and whys",
+				"Take em off and leave them all outside",
+				"Lock it all outside"
+			]
+
+		},
+		{
+			"title": "Chorus",
+			"measures" : 9,
+			"notes" : [
+			],
+			"lyrics" : [
+				"repeat first chorus"
+			]
+		},
+		{
+			"title" : "Solo",
+			"measures" : 9
+		},
+		{
+			"title": "Bridge",
+			"measures" : 9,
+			"notes" : [
+				"build last **2 meas** into chorus"
+			],
+			"lyrics" : [
+				"Without a single a word",
+				"Baby we can say so much",
+				"Reveal everything with just one touch"
+			]
+
+		},
+		{
+			"title": "Chorus",
+			"measures" : 9,
+			"notes" : [
+				"first 4 meas:",
+				"| k- s- -- sk | k- s- -- sk |",
+				"back to regular chorus groove"
+			],
+			"lyrics" : [
+				"repeat first chorus"
+			]
+		},
+		{
+			"title" : "Outro",
+			"measures" : 16,
+			"notes": [
+				"outro guitar solo",
+				"fill on meas 7 into meas 8: ",
+				"| sstt ffss ttff sstt | c / / / |"
+			],
+			"lyrics" : [
+				"Kiss me in the dark",
+				"Yeahhhh"
+			]
+		}
+
+	]
+}
