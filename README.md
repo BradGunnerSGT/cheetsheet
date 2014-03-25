@@ -43,7 +43,7 @@ Copy the template file (songs/.template.json) to a new file in the ''songs''
 directory, and edit it.  Once you have modified the file to have the correct
 sections, lyrics, etc then run the following command:
 
-    bin/cheetsheet.py songs/songname.json
+    bin/cheetsheet songs/songname.json
 
 This will create a new file named ''songs/songname.pdf''.
 
