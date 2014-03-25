@@ -34,3 +34,17 @@ Requirements
 Cheetsheet requires Python 2.7+ and the following python modules:
 - ReportLab: module for PDF generation.
 - Markdown: for formatting text to HTML or other markup
+
+
+Usage
+====
+
+Copy the template file (songs/.template.json) to a new file in the ''songs''
+directory, and edit it.  Once you have modified the file to have the correct
+sections, lyrics, etc then run the following command:
+
+    bin/cheetsheet.py songs/songname.json
+
+This will create a new file named ''songs/songname.pdf''.
+
+
