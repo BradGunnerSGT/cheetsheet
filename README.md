@@ -1,5 +1,4 @@
-Cheetsheet
-====
+# Cheetsheet
 
 Cheetsheet is a method of taking text files in the Cheetsheet notation and
 outputting PDF files for use by musicians.
@@ -11,8 +10,7 @@ about the structure of the song, with cues for sections, notes about the feel
 of a section, drum tab for interesting fills leading to the next section, etc.
 
 
-License
-====
+# License
 
 Cheetsheet is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -28,16 +26,14 @@ You should have received a copy of the GNU General Public License
 along with Cheetsheet.  If not, see <http://www.gnu.org/licenses/>.
 
 
-Requirements
-====
+# Requirements
 
 Cheetsheet requires Python 2.7+ and the following python modules:
 - ReportLab: module for PDF generation.
 - Markdown: for formatting text to HTML or other markup
 
 
-Usage
-====
+# Usage
 
 Copy the template file (songs/.template.json) to a new file in the ''songs''
 directory, and edit it.  Once you have modified the file to have the correct
